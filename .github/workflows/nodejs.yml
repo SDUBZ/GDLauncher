@@ -19,6 +19,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: npm install, build, and test
       run: |
+        $ make profile-install
         npm@5 ci
         npm@5 run build --if-present
         npm@5 test
