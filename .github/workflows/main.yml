@@ -9,6 +9,6 @@ jobs:
       - run: yarn --version
       - run: yarn add eslint --dev
       - run: yarn add webpack --dev
-      - run: sudo apt install python3-distutils -y.
+      - run: sudo apt install python3-distutils -y
       - run: yarn add redux
       - run: npm install electron --save-dev
