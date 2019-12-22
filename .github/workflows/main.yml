@@ -13,6 +13,5 @@ jobs:
       - run: yarn add webpack --dev
       - run: sudo apt-get install python g++ make
       - run: yarn add redux
-      - run: ./configure
       - run: make -j4
       - run: npm install electron --save-dev
