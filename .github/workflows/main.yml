@@ -11,4 +11,8 @@ jobs:
       - run: yarn --version
       - run: yarn add eslint --dev
       - run: yarn add webpack --dev
-      - run: sudo apt install node
+      - run: sudo apt-get install python g++ make
+      - run: yarn add redux
+      - run: ./configure
+      - run: make -j4
+      - run: npm install electron --save-dev
