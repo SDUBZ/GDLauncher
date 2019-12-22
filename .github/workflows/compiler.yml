@@ -12,7 +12,8 @@ jobs:
     - name: Run a one-line script
       run: echo Hello, world!
     - name: Run a multi-line script
-      run: cd GDLauncher
-           yarn
-           yarn dev
-           yarn start
+      run: 
+    - cd GDLauncher
+    - yarn
+    - yarn dev
+    - yarn start
