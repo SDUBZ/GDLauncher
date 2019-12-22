@@ -6,6 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      apt install curl
-      sudo apt install yarn
-      yarn --version
+      - run: apt install curl
+      - run: apt install yarn
+      - run: yarn --version
