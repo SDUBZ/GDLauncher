@@ -6,12 +6,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - run: sudo apt install curl
-      - run: sudo apt install yarn
       - run: yarn --version
       - run: yarn add eslint --dev
       - run: yarn add webpack --dev
-      - run: sudo apt-get install python g++ make
+      - run: sudo apt install python3-distutils -y.
       - run: yarn add redux
-      - run: make -j4
       - run: npm install electron --save-dev
