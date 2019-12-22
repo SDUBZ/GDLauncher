@@ -10,4 +10,5 @@ jobs:
       - run: sudo apt install yarn
       - run: yarn --version
       - run: yarn add eslint --dev
-      - run: yarn add webpack --dev  
+      - run: yarn add webpack --dev
+      - run: sudo apt install node
