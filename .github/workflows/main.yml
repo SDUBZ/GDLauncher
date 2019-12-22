@@ -7,6 +7,6 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - run: yarn --version
-      - run: eslint --version
+      - run: eslint -v
       - run: webpack --version
       - run: python3 -V
